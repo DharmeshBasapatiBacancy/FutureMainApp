@@ -108,12 +108,6 @@ const Login = () => {
           <Typography variant="body2" color="text.secondary" align="center" sx={{ mb: 3 }}>
             Enter your credentials to access the admin panel
           </Typography>
-          <Alert severity="info" sx={{ mb: 2 }} icon={false}>
-            <Typography variant="body2">
-              <strong>Test login (no Supabase):</strong> test@admin.com / test123
-            </Typography>
-          </Alert>
-
           {error && (
             <Alert severity="error" sx={{ mb: 2 }}>
               {error}

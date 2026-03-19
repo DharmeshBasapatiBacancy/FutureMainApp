@@ -363,24 +363,6 @@ fun SignInScreen(
                 }
             }
 
-            Spacer(modifier = Modifier.height(8.dp))
-
-            TextButton(
-                onClick = {
-                    onDismissError()
-                    onTestLogin()
-                },
-                enabled = !isLoading,
-                modifier = Modifier.fillMaxWidth()
-            ) {
-                Text(
-                    text = "Use test customer login",
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = FutureTeal,
-                    fontWeight = FontWeight.Medium
-                )
-            }
-
             if (error != null) {
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(
