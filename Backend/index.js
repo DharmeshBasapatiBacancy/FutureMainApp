@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware - allow Admin panel and Android app (emulator + physical device)
 const allowedOrigins = [
   process.env.ADMIN_PANEL_URL || 'http://localhost:5173',
+  'https://futuremainapp-admin.vercel.app',
   'http://localhost:5173',
   'http://10.0.2.2:5000',
   'http://10.0.2.2:5173',
